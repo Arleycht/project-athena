@@ -61,7 +61,7 @@ def evaluate(trans_configs, model_configs,
     # Evaluate AEs.
     results = {}
     ae_list = data_configs.get('task1_aes')
-    ae_file = os.path.join(data_configs.get('dir'), ae_list[0])
+    ae_file = os.path.join(data_configs.get('dir'), ae_list[4])
     x_adv = np.load(ae_file)
 
     # evaluate the undefended model on the AE

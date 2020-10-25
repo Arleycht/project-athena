@@ -1,8 +1,8 @@
 {
-  "num_attacks": 13,
+  "num_attacks": 12,
   "configs0": {
     "attack": "fgsm",
-    "description": "FGSM_eps0.05",
+    "description": "FGSM_eps0.01",
     "eps": 0.01
   },
   "configs1": {
@@ -12,61 +12,55 @@
   },
   "configs2": {
     "attack": "fgsm",
-    "description": "FGSM_eps0.05",
+    "description": "FGSM_eps0.1",
     "eps": 0.1
   },
   "configs3": {
     "attack": "fgsm",
-    "description": "FGSM_eps0.05",
+    "description": "FGSM_eps0.2",
     "eps": 0.2
   },
   "configs4": {
     "attack": "pgd",
-    "description": "PGD_eps0.04",
+    "description": "PGD_eps0.05",
     "eps": 0.05
   },
   "configs5": {
     "attack": "pgd",
-    "description": "PGD_eps0.04",
+    "description": "PGD_eps0.2",
     "eps": 0.2
   },
   "configs6": {
     "attack": "pgd",
-    "description": "PGD_eps0.04",
+    "description": "PGD_eps0.5",
     "eps": 0.5
   },
   "configs7": {
     "attack": "pgd",
-    "description": "FGSM_eps0.05",
+    "description": "PGD_eps0.7",
     "eps": 0.7
   },
   "configs8": {
     "attack": "bim",
-    "description": "BIM_eps0.08",
+    "description": "BIM_eps0.1_iter20",
     "eps": 0.1,
 	"max_iter": 20
   },
   "configs9": {
     "attack": "bim",
-    "description": "BIM_eps0.1_iter20",
-    "eps": 0.1,
-	"max_iter": 20
-  },
-  "configs10": {
-    "attack": "bim",
-    "description": "BIM_eps0.1_iter20",
+    "description": "BIM_eps0.1_iter30",
     "eps": 0.1,
 	"max_iter": 30
   },
-  "configs11": {
+  "configs10": {
     "attack": "bim",
-    "description": "BIM_eps0.1_iter20",
+    "description": "BIM_eps0.1_iter40",
     "eps": 0.1,
 	"max_iter": 40
   },
-  "configs12": {
+  "configs11": {
     "attack": "bim",
-    "description": "BIM_eps0.1_iter20",
+    "description": "BIM_eps0.5_iter40",
     "eps": 0.5,
 	"max_iter": 40
   }

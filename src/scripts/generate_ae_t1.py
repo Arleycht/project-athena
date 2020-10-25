@@ -1,11 +1,7 @@
 import os
+import sys
 import numpy as np
-
-from datetime import time
-from attacks.attack import generate
-from utils.file import load_from_json
-from utils.metrics import error_rate
-from utils.model import load_lenet
+import time
 
 
 def generate_ae(model, data, labels, attack_configs, save=False, output_dir=None):
@@ -40,25 +36,36 @@ def generate_ae(model, data, labels, attack_configs, save=False, output_dir=None
             np.save(file, data_adv)
 
 if __name__ == '__main__':
-    # load configs
-    model_configs = load_from_json("../configs/demo/model-mnist.json")
-    attack_configs = load_from_json("../configs/demo/attack-zk-mnist.json")
-    data_configs = load_from_json("../configs/demo/data-mnist.json")
+    module_path = os.path.abspath(os.path.join('../'))
+    if module_path not in sys.path:
+        sys.path.append(module_path)
 
-    # load target model
-    model_file = os.path.join(model_configs.get("dir"), model_configs.get("um_file"))
-    target = load_lenet(file=model_file, wrap=True)
+from attacks.attack import generate
+from utils.file import load_from_json
+from utils.metrics import error_rate
+from utils.model import load_lenet
 
-    # load the benign samples
+# load configs
+model_configs = load_from_json("../configs/demo/model-mnist.json")
+attack_configs = load_from_json("../configs/demo/attack-zk-mnist.json")
+data_configs = load_from_json("../configs/demo/data-mnist.json")
 
-    data_file = os.path.join(data_configs.get('sub_dir'), data_configs.get('subsample_file'))
-    data_bs = np.load(data_file)
+# load target model
+model_file = os.path.join(model_configs.get("dir"), model_configs.get("um_file"))
+target = load_lenet(file=model_file, wrap=True)
 
-    # load the corresponding true labels
-    label_file = os.path.join(data_configs.get('sub_dir'), data_configs.get('sublabel_file'))
-    labels = np.load(label_file)
+# load the benign samples
 
-    # number of samples???
-    data_bs = data_bs[:10]
-    labels = labels[:10]
-    generate_ae(model=target, data=data_bs, labels=labels, attack_configs=attack_configs, save=True , output_dir="../../results")
+data_file = os.path.join(data_configs.get('dir'), data_configs.get('bs_file'))
+data_bs = np.load(data_file)
+
+# load the corresponding true labels
+label_file = os.path.join(data_configs.get('dir'), data_configs.get('label_file'))
+labels = np.load(label_file)
+
+output_root = "../../data"
+
+# number of samples???
+data_bs = data_bs[:]
+labels = labels[:]
+generate_ae(model=target, data=data_bs, labels=labels, attack_configs=attack_configs, save=True , output_dir=output_root)

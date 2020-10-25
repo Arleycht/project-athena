@@ -1,7 +1,7 @@
 {
     "dir": "../../data/",
-    "bs_file": "test_BS-mnist-clean.npy",
-    "label_file": "test_Label-mnist-clean.npy",
+    "bs_file": "subsamples-mnist-ratio_0.05-285857.296.npy",
+    "label_file": "sublabels-mnist-ratio_0.05-285857.296.npy",
     "ae_files": [
         "test_AE-mnist-cnn-clean-fgsm_eps0.1.npy",
         "test_AE-mnist-cnn-clean-fgsm_eps0.15.npy",
@@ -49,10 +49,8 @@
         "test_AE-mnist-cnn-clean-onepixel_pxCount40.npy",
         "test_AE-mnist-cnn-clean-onepixel_pxCount75.npy"
     ],
-    "sub_dir":"../../results",
-    "subsample_file": "subsamples-mnist-ratio_0.1-271086.203.npy",
-    "sublabel_file": "sublabels-mnist-ratio_0.1-271086.203.npy",
-    "task1_aes" : [
 
+    "task1_aes": [
+        "285922.75.npy"
     ]
 }

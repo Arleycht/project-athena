@@ -78,7 +78,7 @@ def get_dataloader(data, labels, batch_size=128, shuffle=False, **kwargs):
     return dataloader
 
 
-def subsampling(data, labels, num_classes, ratio=0.1, filepath=None, filename=None):
+def subsampling(data, labels, num_classes, ratio=0.05, filepath=None, filename=None):
     """
     Subsampling dataset.
     :param data: numpy array. the population dataset to sample from.

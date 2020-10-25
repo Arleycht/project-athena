@@ -115,6 +115,6 @@ if __name__ == '__main__':
     labels = np.load(label_file)
 
     # generate adversarial examples for a small subset
-    data_bs = data_bs[:10]
-    labels = labels[:10]
+    data_bs = data_bs[:]
+    labels = labels[:]
     generate_ae(model=target, data=data_bs, labels=labels, attack_configs=attack_configs)

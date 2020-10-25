@@ -1,11 +1,6 @@
 import os
+import sys
 import numpy as np
-
-from models.athena import Ensemble, ENSEMBLE_STRATEGY
-from utils.file import load_from_json
-from utils.metrics import get_corrections, error_rate
-from utils.model import load_lenet, load_pool
-
 
 def evaluate(trans_configs, model_configs,
              data_configs, save=False, output_dir=None):
@@ -65,8 +60,8 @@ def evaluate(trans_configs, model_configs,
 
     # Evaluate AEs.
     results = {}
-    ae_list = data_configs.get('ae_files')
-    ae_file = os.path.join(data_configs.get('dir'), ae_list[4])
+    ae_list = data_configs.get('task1_aes')
+    ae_file = os.path.join(data_configs.get('dir'), ae_list[0])
     x_adv = np.load(ae_file)
 
     # evaluate the undefended model on the AE
@@ -94,16 +89,25 @@ def evaluate(trans_configs, model_configs,
     print(">>> Evaluations on [{}]:\n{}".format(ae_file, results))
 
 if __name__ == '__main__':
-    # load configs
-    trans_configs = load_from_json("../configs/demo/athena-mnist.json")
-    model_configs =load_from_json("../configs/demo/model-mnist.json")
-    data_configs = load_from_json("../configs/demo/data-mnist.json")
+    module_path = os.path.abspath(os.path.join('../'))
+    if module_path not in sys.path:
+        sys.path.append(module_path)
 
-    output_root = "../../results"
+from models.athena import Ensemble, ENSEMBLE_STRATEGY
+from utils.file import load_from_json
+from utils.metrics import get_corrections, error_rate
+from utils.model import load_lenet, load_pool
 
-    # evaluate
-    evaluate(trans_configs=trans_configs,
-             model_configs=model_configs,
-             data_configs=data_configs,
-             save=False,
-             output_dir=output_root)
+# load configs
+trans_configs = load_from_json("../configs/demo/athena-mnist.json")
+model_configs =load_from_json("../configs/demo/model-mnist.json")
+data_configs = load_from_json("../configs/demo/data-mnist.json")
+
+output_root = "../../results/evaluation"
+
+# evaluate
+evaluate(trans_configs=trans_configs,
+         model_configs=model_configs,
+         data_configs=data_configs,
+         save=True,
+         output_dir=output_root)

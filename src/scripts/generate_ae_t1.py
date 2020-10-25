@@ -26,6 +26,19 @@ def generate_ae(model, data, labels, attack_configs, save=False, output_dir=None
         err = error_rate(y_pred=predictions, y_true=labels)
         print(">>> error rate:", err)
 
+        # plotting some examples
+        num_plotting = min(data.shape[0], 2)
+        for i in range(num_plotting):
+            img = data_adv[i].reshape((img_rows, img_cols))
+            plt.imshow(img, cmap='gray')
+            title = '{}: {}->{}'.format(attack_configs.get(key).get("description"),
+                                        labels[i],
+                                        predictions[i]
+                                        )
+            plt.title(title)
+            plt.show()
+            plt.close()
+
         # save the adversarial example
         if save:
             if output_dir is None:
@@ -44,6 +57,7 @@ from attacks.attack import generate
 from utils.file import load_from_json
 from utils.metrics import error_rate
 from utils.model import load_lenet
+from matplotlib import pyplot as plt
 
 # load configs
 model_configs = load_from_json("../configs/demo/model-mnist.json")

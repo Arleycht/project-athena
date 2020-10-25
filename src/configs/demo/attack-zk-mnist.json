@@ -1,28 +1,33 @@
 {
   "num_attacks": 5,
   "configs0": {
-    "attack": "pgd",
+    "attack": "jsma",
     "description": "PGD_eps0.04",
-    "eps": 0.01
+    "theta": ,
+    "gamma":
   },
   "configs1": {
     "attack": "pgd",
     "description": "PGD_eps0.05",
-    "eps": 0.3
+    "theta":,
+    "gamma":,
   },
   "configs2": {
     "attack": "pgd",
     "description": "PGD_eps0.08",
-    "eps": 0.35
+    "theta":,
+    "gamma":
   },
   "configs3": {
     "attack": "pgd",
     "description": "PGD_eps0.09",
-    "eps": 0.4
+    "theta":,
+    "gamma":
   },
   "configs4": {
     "attack": "pgd",
     "description": "PGD_eps0.15",
-    "eps": 0.45
+    "theta":,
+    "gamma":
   }
 }

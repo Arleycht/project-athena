@@ -1,0 +1,53 @@
+{
+  "num_attacks": 10,
+    "configs0": {
+    "attack": "pgd",
+    "description": "PGD_eps0.05",
+    "eps": 0.05
+  },
+  "configs1": {
+    "attack": "pgd",
+    "description": "PGD_eps0.2",
+    "eps": 0.2
+  },
+  "configs2": {
+    "attack": "pgd",
+    "description": "PGD_eps0.5",
+    "eps": 0.5
+  },
+  "configs3": {
+    "attack": "pgd",
+    "description": "PGD_eps0.7",
+    "eps": 0.7
+  },
+  "configs4": {
+    "attack": "pgd",
+    "description": "PGD_eps",
+    "eps": 0.7
+  },
+  "configs5": {
+    "attack": "fgsm",
+    "description": "FGSM_eps0.01",
+    "eps": 0.01
+  },
+  "configs6": {
+    "attack": "fgsm",
+    "description": "FGSM_eps0.05",
+    "eps": 0.05
+  },
+  "configs7": {
+    "attack": "fgsm",
+    "description": "FGSM_eps0.1",
+    "eps": 0.1
+  },
+  "configs8": {
+    "attack": "fgsm",
+    "description": "FGSM_eps0.2",
+    "eps": 0.2
+  },
+  "configs9": {
+    "attack": "fgsm",
+    "description": "FGSM_eps",
+    "eps": 0.2
+  }
+}

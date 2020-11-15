@@ -66,15 +66,15 @@
         "pgd-187951.687.npy"
     ],
     "task2_aes": [
-        "task2-FGSM_0.5",
-        "task2-FGSM_eps0.1",
-        "task2-FGSM_eps0.01",
-        "task2-FGSM_eps0.2",
-        "task2-FGSM_eps0.05",
-        "task2-PGD_eps0.1",
-        "task2-PGD_eps0.2",
-        "task2-PGD_eps0.5",
-        "task2-PGD_eps0.05",
-        "task2-PGD_eps0.7"
+        "task2-FGSM_0.5.npy",
+        "task2-FGSM_eps0.1.npy",
+        "task2-FGSM_eps0.01.npy",
+        "task2-FGSM_eps0.2.npy",
+        "task2-FGSM_eps0.05.npy",
+        "task2-PGD_eps0.1.npy",
+        "task2-PGD_eps0.2.npy",
+        "task2-PGD_eps0.5.npy",
+        "task2-PGD_eps0.05.npy",
+        "task2-PGD_eps0.7.npy"
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "dir": "../Task2/data/",
+    "dir": "../data/",
     "bs_file": "subsamples-mnist-ratio_0.05-285857.296.npy",
     "label_file": "sublabels-mnist-ratio_0.05-285857.296.npy",
     "ae_files": [
@@ -65,7 +65,16 @@
         "pgd-187937.515.npy",
         "pgd-187951.687.npy"
     ],
-    "task2_aes": {
-
-    }
+    "task2_aes": [
+        "111822.859.npy",
+        "112149.578.npy",
+        "112584.421.npy",
+        "112962.656.npy",
+        "113415.828.npy",
+        "113459.828.npy",
+        "113511.093.npy",
+        "113581.718.npy",
+        "113654.921.npy",
+        "113724.812.npy"
+    ]
 }

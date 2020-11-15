@@ -1,5 +1,5 @@
 {
-    "dir": "../data/",
+    "dir": "Task2/data/",
     "bs_file": "subsamples-mnist-ratio_0.05-285857.296.npy",
     "label_file": "sublabels-mnist-ratio_0.05-285857.296.npy",
     "ae_files": [

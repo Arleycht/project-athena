@@ -1,6 +1,8 @@
 {
     "dir": "Task2/data/",
     "bl_dir": "data/",
+    "all_bs_file": "test_BS-mnist-clean",
+    "all_label_file": "test_Label-mnist-clean",
     "bs_file": "subsamples-mnist-ratio_0.05-285857.296.npy",
     "label_file": "sublabels-mnist-ratio_0.05-285857.296.npy",
     "ae_files": [

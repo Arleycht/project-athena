@@ -66,15 +66,15 @@
         "pgd-187951.687.npy"
     ],
     "task2_aes": [
-        "111822.859.npy",
-        "112149.578.npy",
-        "112584.421.npy",
-        "112962.656.npy",
-        "113415.828.npy",
-        "113459.828.npy",
-        "113511.093.npy",
-        "113581.718.npy",
-        "113654.921.npy",
-        "113724.812.npy"
+        "task2-FGSM_0.5",
+        "task2-FGSM_eps0.1",
+        "task2-FGSM_eps0.01",
+        "task2-FGSM_eps0.2",
+        "task2-FGSM_eps0.05",
+        "task2-PGD_eps0.1",
+        "task2-PGD_eps0.2",
+        "task2-PGD_eps0.5",
+        "task2-PGD_eps0.05",
+        "task2-PGD_eps0.7"
     ]
 }

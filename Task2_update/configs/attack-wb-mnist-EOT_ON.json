@@ -1,0 +1,113 @@
+{
+  "num_attacks": 10,
+  "configs0": {
+    "attack": "pgd",
+    "description": "PGD_eps0.05EOT_ON",
+    "eps": 0.05,
+    "distribution": {
+      "num_samples": 500,
+      "transformation": "translation",
+      "min_offset": -0.2,
+      "max_offset": 0.2
+    }
+  },
+  "configs1": {
+    "attack": "pgd",
+    "description": "PGD_eps0.2EOT_ON",
+    "eps": 0.2,
+    "distribution": {
+      "num_samples": 500,
+      "transformation": "translation",
+      "min_offset": -0.2,
+      "max_offset": 0.2
+    }
+  },
+  "configs2": {
+    "attack": "pgd",
+    "description": "PGD_eps0.5EOT_ON",
+    "eps": 0.5,
+    "distribution": {
+      "num_samples": 500,
+      "transformation": "translation",
+      "min_offset": -0.2,
+      "max_offset": 0.2
+    }
+  },
+  "configs3": {
+    "attack": "pgd",
+    "description": "PGD_eps0.7EOT_ON",
+    "eps": 0.7,
+    "distribution": {
+      "num_samples": 500,
+      "transformation": "translation",
+      "min_offset": -0.2,
+      "max_offset": 0.2
+    }
+  },
+  "configs4": {
+    "attack": "pgd",
+    "description": "PGD_eps0.1EOT_ON",
+    "eps": 0.1,
+    "distribution": {
+      "num_samples": 500,
+      "transformation": "translation",
+      "min_offset": -0.2,
+      "max_offset": 0.2
+    }
+  },
+  "configs5": {
+    "attack": "fgsm",
+    "description": "FGSM_eps0.01EOT_ON",
+    "eps": 0.01,
+    "distribution": {
+      "num_samples": 500,
+      "transformation": "rotation",
+      "min_angle": -45,
+      "max_angle": 45
+    }
+  },
+  "configs6": {
+    "attack": "fgsm",
+    "description": "FGSM_eps0.05EOT_ON",
+    "eps": 0.05,
+    "distribution": {
+      "num_samples": 500,
+      "transformation": "rotation",
+      "min_angle": -45,
+      "max_angle": 45
+    }
+  },
+  "configs7": {
+    "attack": "fgsm",
+    "description": "FGSM_eps0.1EOT_ON",
+    "eps": 0.1,
+    "distribution": {
+      "num_samples": 500,
+      "transformation": "rotation",
+      "min_angle": -45,
+      "max_angle": 45
+    }
+  },
+  "configs8": {
+    "attack": "fgsm",
+    "description": "FGSM_eps0.2EOT_ON",
+    "eps": 0.2,
+    "distribution": {
+      "num_samples": 500,
+      "transformation": "rotation",
+      "min_angle": -45,
+      "max_angle": 45
+    }
+  },
+  "configs9": {
+    "attack": "fgsm",
+    "description": "FGSM_eps0.5EOT_ON",
+    "eps": 0.5,
+    "distribution": {
+      "num_samples": 500,
+      "transformation": "rotation",
+      "min_angle": -45,
+      "max_angle": 45
+    }
+  }
+}

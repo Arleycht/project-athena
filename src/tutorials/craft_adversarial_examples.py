@@ -93,7 +93,7 @@ if __name__ == '__main__':
                         default='../configs/demo/data-mnist.json',
                         help='Folder where test data stored in.')
     parser.add_argument('-a', '--attack-configs', required=False,
-                        default='../configs/demo/attack-zk-mnist.json',
+                        default='../configs/demo/attack-wb-mnist.json',
                         help='Folder where test data stored in.')
     parser.add_argument('-o', '--output-root', required=False,
                         default='results',

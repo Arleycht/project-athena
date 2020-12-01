@@ -61,7 +61,7 @@ from matplotlib import pyplot as plt
 
 # load configs
 model_configs = load_from_json("../configs/demo/model-mnist.json")
-attack_configs = load_from_json("../configs/demo/attack-zk-mnist.json")
+attack_configs = load_from_json("../configs/demo/attack-wb-mnist.json")
 data_configs = load_from_json("../configs/demo/data-mnist.json")
 
 # load target model

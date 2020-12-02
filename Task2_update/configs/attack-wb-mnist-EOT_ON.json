@@ -2,8 +2,8 @@
   "num_attacks": 10,
   "configs0": {
     "attack": "pgd",
-    "description": "PGD_eps0.05EOT_ON",
-    "eps": 0.05,
+    "description": "PGD_eps0.08",
+    "eps": 0.08,
     "distribution": {
       "num_samples": 250,
       "transformation": "translation",
@@ -13,8 +13,8 @@
   },
   "configs1": {
     "attack": "pgd",
-    "description": "PGD_eps0.2EOT_ON",
-    "eps": 0.2,
+    "description": "PGD_eps0.12",
+    "eps": 0.12,
     "distribution": {
       "num_samples": 250,
       "transformation": "translation",
@@ -24,8 +24,8 @@
   },
   "configs2": {
     "attack": "pgd",
-    "description": "PGD_eps0.5EOT_ON",
-    "eps": 0.5,
+    "description": "PGD_eps0.15",
+    "eps": 0.15,
     "distribution": {
       "num_samples": 250,
       "transformation": "translation",
@@ -35,8 +35,8 @@
   },
   "configs3": {
     "attack": "pgd",
-    "description": "PGD_eps0.7EOT_ON",
-    "eps": 0.7,
+    "description": "PGD_eps0.17",
+    "eps": 0.17,
     "distribution": {
       "num_samples": 250,
       "transformation": "translation",
@@ -46,8 +46,8 @@
   },
   "configs4": {
     "attack": "pgd",
-    "description": "PGD_eps0.1EOT_ON",
-    "eps": 0.1,
+    "description": "PGD_eps0.2",
+    "eps": 0.2,
     "distribution": {
       "num_samples": 250,
       "transformation": "translation",
@@ -57,8 +57,8 @@
   },
   "configs5": {
     "attack": "fgsm",
-    "description": "FGSM_eps0.01EOT_ON",
-    "eps": 0.01,
+    "description": "FGSM_eps0.1",
+    "eps": 0.1,
     "distribution": {
       "num_samples": 250,
       "transformation": "rotation",
@@ -68,8 +68,8 @@
   },
   "configs6": {
     "attack": "fgsm",
-    "description": "FGSM_eps0.05EOT_ON",
-    "eps": 0.05,
+    "description": "FGSM_eps0.15",
+    "eps": 0.15,
     "distribution": {
       "num_samples": 250,
       "transformation": "rotation",
@@ -79,8 +79,8 @@
   },
   "configs7": {
     "attack": "fgsm",
-    "description": "FGSM_eps0.1EOT_ON",
-    "eps": 0.1,
+    "description": "FGSM_eps0.2",
+    "eps": 0.2,
     "distribution": {
       "num_samples": 250,
       "transformation": "rotation",
@@ -90,8 +90,8 @@
   },
   "configs8": {
     "attack": "fgsm",
-    "description": "FGSM_eps0.2EOT_ON",
-    "eps": 0.2,
+    "description": "FGSM_eps0.23",
+    "eps": 0.23,
     "distribution": {
       "num_samples": 250,
       "transformation": "rotation",
@@ -101,8 +101,8 @@
   },
   "configs9": {
     "attack": "fgsm",
-    "description": "FGSM_eps0.5EOT_ON",
-    "eps": 0.5,
+    "description": "FGSM_eps0.25",
+    "eps": 0.25,
     "distribution": {
       "num_samples": 250,
       "transformation": "rotation",

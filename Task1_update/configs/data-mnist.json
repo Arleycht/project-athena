@@ -3,8 +3,8 @@
     "bl_dir": "data/",
     "all_bs_file": "test_BS-mnist-clean.npy",
     "all_label_file": "test_Label-mnist-clean.npy",
-    "bs_file": "subsample/subsamples-mnist-ratio_0.1-580228.921.npy",
-    "label_file": "subsample/sublabels-mnist-ratio_0.1-580228.921.npy",
+    "bs_file": "subsample/subsamples-mnist-ratio_0.05-590500.359.npy",
+    "label_file": "subsample/sublabels-mnist-ratio_0.05-590500.359.npy",
     "ae_files": [
         "test_AE-mnist-cnn-clean-fgsm_eps0.1.npy",
         "test_AE-mnist-cnn-clean-fgsm_eps0.15.npy",

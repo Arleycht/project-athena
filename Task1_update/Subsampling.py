@@ -29,6 +29,6 @@ labels = np.load(file)
 subsamples, sublabels = subsampling(data=X_bs,
                                     labels=labels,
                                     num_classes=10,
-                                    ratio=0.1,
+                                    ratio=0.05,
                                     filepath=output_root,
                                     filename='mnist')

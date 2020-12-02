@@ -1,6 +1,6 @@
 {
     "num_transformations": 73,
-    "active_wds": [1, 4, 12, 15, 21, 26, 28, 36, 38, 40, 47, 57, 64, 69, 72],
+    "active_wds": [1, 4, 12, 15, 21],
     "configs0": {
         "type": "clean",
         "subtype": "",

@@ -5,7 +5,7 @@
     "description": "PGD_eps0.05EOT_ON",
     "eps": 0.05,
     "distribution": {
-      "num_samples": 500,
+      "num_samples": 250,
       "transformation": "translation",
       "min_offset": -0.2,
       "max_offset": 0.2
@@ -16,7 +16,7 @@
     "description": "PGD_eps0.2EOT_ON",
     "eps": 0.2,
     "distribution": {
-      "num_samples": 500,
+      "num_samples": 250,
       "transformation": "translation",
       "min_offset": -0.2,
       "max_offset": 0.2
@@ -27,7 +27,7 @@
     "description": "PGD_eps0.5EOT_ON",
     "eps": 0.5,
     "distribution": {
-      "num_samples": 500,
+      "num_samples": 250,
       "transformation": "translation",
       "min_offset": -0.2,
       "max_offset": 0.2
@@ -38,7 +38,7 @@
     "description": "PGD_eps0.7EOT_ON",
     "eps": 0.7,
     "distribution": {
-      "num_samples": 500,
+      "num_samples": 250,
       "transformation": "translation",
       "min_offset": -0.2,
       "max_offset": 0.2
@@ -49,7 +49,7 @@
     "description": "PGD_eps0.1EOT_ON",
     "eps": 0.1,
     "distribution": {
-      "num_samples": 500,
+      "num_samples": 250,
       "transformation": "translation",
       "min_offset": -0.2,
       "max_offset": 0.2
@@ -60,7 +60,7 @@
     "description": "FGSM_eps0.01EOT_ON",
     "eps": 0.01,
     "distribution": {
-      "num_samples": 500,
+      "num_samples": 250,
       "transformation": "rotation",
       "min_angle": -45,
       "max_angle": 45
@@ -71,7 +71,7 @@
     "description": "FGSM_eps0.05EOT_ON",
     "eps": 0.05,
     "distribution": {
-      "num_samples": 500,
+      "num_samples": 250,
       "transformation": "rotation",
       "min_angle": -45,
       "max_angle": 45
@@ -82,7 +82,7 @@
     "description": "FGSM_eps0.1EOT_ON",
     "eps": 0.1,
     "distribution": {
-      "num_samples": 500,
+      "num_samples": 250,
       "transformation": "rotation",
       "min_angle": -45,
       "max_angle": 45
@@ -93,7 +93,7 @@
     "description": "FGSM_eps0.2EOT_ON",
     "eps": 0.2,
     "distribution": {
-      "num_samples": 500,
+      "num_samples": 250,
       "transformation": "rotation",
       "min_angle": -45,
       "max_angle": 45
@@ -104,7 +104,7 @@
     "description": "FGSM_eps0.5EOT_ON",
     "eps": 0.5,
     "distribution": {
-      "num_samples": 500,
+      "num_samples": 250,
       "transformation": "rotation",
       "min_angle": -45,
       "max_angle": 45

@@ -1,10 +1,10 @@
 {
-    "dir": "Task1_update/data/",
-    "bl_dir": "data/",
+    "dir": "data/adversary_examples",
+    "bl_dir": "../data/",
     "all_bs_file": "test_BS-mnist-clean.npy",
     "all_label_file": "test_Label-mnist-clean.npy",
-    "bs_file": "subsample/subsamples-mnist-ratio_0.05-590500.359.npy",
-    "label_file": "subsample/sublabels-mnist-ratio_0.05-590500.359.npy",
+    "bs_file": "../subsample/subsamples-mnist-ratio_0.05-590500.359.npy",
+    "label_file": "../subsample/sublabels-mnist-ratio_0.05-590500.359.npy",
     "ae_files": [
         "test_AE-mnist-cnn-clean-fgsm_eps0.1.npy",
         "test_AE-mnist-cnn-clean-fgsm_eps0.15.npy",
@@ -53,31 +53,26 @@
         "test_AE-mnist-cnn-clean-onepixel_pxCount75.npy"
     ],
 
-    "task1_aes": [
-        "bim-187978.156.npy",
-        "bim-188003.937.npy",
-        "bim-188042.406.npy",
-        "bim-188092.234.npy",
-        "bim-188142.046.npy",
-        "fgsm-187886.64.npy",
-        "fgsm-187889.875.npy",
-        "fgsm-187892.859.npy",
-        "fgsm-187896.031.npy",
-        "pgd-187909.625.npy",
-        "pgd-187923.437.npy",
-        "pgd-187937.515.npy",
-        "pgd-187951.687.npy"
-    ],
-    "task2_aes": [
-        "task2-FGSM_0.5.npy",
-        "task2-FGSM_eps0.1.npy",
-        "task2-FGSM_eps0.01.npy",
-        "task2-FGSM_eps0.2.npy",
-        "task2-FGSM_eps0.05.npy",
-        "task2-PGD_eps0.1.npy",
-        "task2-PGD_eps0.2.npy",
-        "task2-PGD_eps0.5.npy",
-        "task2-PGD_eps0.05.npy",
-        "task2-PGD_eps0.7.npy"
+    "aes": [
+        "FGSM_eps0.1.npy",
+        "FGSM_eps0.1-EOT_OFF.npy",
+        "FGSM_eps0.2.npy",
+        "FGSM_eps0.2-EOT_OFF.npy",
+        "FGSM_eps0.15.npy",
+        "FGSM_eps0.15-EOT_OFF.npy",
+        "FGSM_eps0.23.npy",
+        "FGSM_eps0.23-EOT_OFF.npy",
+        "FGSM_eps0.25.npy",
+        "FGSM_eps0.25-EOT_OFF.npy",
+        "PGD_eps0.2.npy",
+        "PGD_eps0.2-EOT_OFF.npy",
+        "PGD_eps0.08.npy",
+        "PGD_eps0.08-EOT_OFF.npy",
+        "PGD_eps0.12.npy",
+        "PGD_eps0.12-EOT_OFF.npy",
+        "PGD_eps0.15.npy",
+        "PGD_eps0.15-EOT_OFF.npy",
+        "PGD_eps0.17.npy",
+        "PGD_eps0.17-EOT_OFF.npy"
     ]
 }
